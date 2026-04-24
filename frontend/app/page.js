@@ -199,7 +199,7 @@ export default function Home() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/bfhl", {
+      const res = await fetch("https://srm-bfhl-challenge-irk5.onrender.com/bfhl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: parsed }),
